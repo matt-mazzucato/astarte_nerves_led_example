@@ -1,0 +1,14 @@
+{
+    "interface_name": "org.astarte-examples.LEDCommand",
+    "version_major": 0,
+    "version_minor": 1,
+    "type": "properties",
+    "ownership": "server",
+    "description": "Control the led status",
+    "mappings": [
+        {
+            "endpoint": "/%{ledName}/turnOn",
+            "type": "boolean"
+        }
+    ]
+}

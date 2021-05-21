@@ -23,7 +23,7 @@ defmodule AstarteNervesLedExample.MixProject do
   def application do
     [
       mod: {AstarteNervesLedExample.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :crypto]
     ]
   end
 
@@ -35,6 +35,9 @@ defmodule AstarteNervesLedExample.MixProject do
       {:shoehorn, "~> 0.7.0"},
       {:ring_logger, "~> 0.8.1"},
       {:toolshed, "~> 0.2.13"},
+      {:skogsra, "~> 2.3"},
+      {:astarte_device, "~> 1.0.0-rc.0"},
+      {:nerves_leds, "~> 0.8"},
 
       # Dependencies for all targets except :host
       {:nerves_runtime, "~> 0.11.3", targets: @all_targets},
